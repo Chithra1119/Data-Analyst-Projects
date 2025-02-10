@@ -1,0 +1,1671 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20241.24.0618.0924                               -->
+<workbook original-version='18.1' source-build='2024.1.4 (20241.24.0618.0924)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AccessibleZoneTabOrder.true...AccessibleZoneTabOrder />
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelExtractV2.true...ObjectModelExtractV2 />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+    <WorksheetBackgroundTransparency />
+    <ZoneBackgroundTransparency />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='Inverter dataset' inline='true' name='federated.1uhbamh0wgypf51dumzv111kxxwg' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Inverter dataset' name='textscan.1r2vb3c1frzz8l12sb05j143s8pn'>
+            <connection class='textscan' directory='C:/Users/Administrator/Downloads/project/Dataset_221' filename='Inverter dataset.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.1r2vb3c1frzz8l12sb05j143s8pn' name='Inverter dataset.csv' table='[Inverter dataset#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='datetime' date-parse-format='dd-MM-yyyy HH:mm|#|#|yyyy-MM-dd HH-mmZ' name='F1' ordinal='0' />
+            <column datatype='real' name='UNIT-1' ordinal='1' />
+            <column datatype='real' name='F3' ordinal='2' />
+            <column datatype='real' name='UNIT-2' ordinal='3' />
+            <column datatype='real' name='F5' ordinal='4' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.1r2vb3c1frzz8l12sb05j143s8pn' name='Inverter dataset.csv' table='[Inverter dataset#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='datetime' date-parse-format='dd-MM-yyyy HH:mm|#|#|yyyy-MM-dd HH-mmZ' name='F1' ordinal='0' />
+            <column datatype='real' name='UNIT-1' ordinal='1' />
+            <column datatype='real' name='F3' ordinal='2' />
+            <column datatype='real' name='UNIT-2' ordinal='3' />
+            <column datatype='real' name='F5' ordinal='4' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Inverter dataset.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F1</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[F1]</local-name>
+            <parent-name>[Inverter dataset.csv]</parent-name>
+            <remote-alias>F1</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>UNIT-1</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[UNIT-1]</local-name>
+            <parent-name>[Inverter dataset.csv]</parent-name>
+            <remote-alias>UNIT-1</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F3</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[F3]</local-name>
+            <parent-name>[Inverter dataset.csv]</parent-name>
+            <remote-alias>F3</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>UNIT-2</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[UNIT-2]</local-name>
+            <parent-name>[Inverter dataset.csv]</parent-name>
+            <remote-alias>UNIT-2</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F5</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[F5]</local-name>
+            <parent-name>[Inverter dataset.csv]</parent-name>
+            <remote-alias>F5</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Date&amp;Time' datatype='datetime' name='[F1]' role='dimension' type='ordinal' />
+      <column caption='Power1' datatype='real' name='[F3]' role='measure' type='quantitative' />
+      <column caption='Power3' datatype='real' name='[F5]' role='measure' type='quantitative' />
+      <column caption='Power' datatype='real' name='[UNIT-1]' role='measure' type='quantitative' />
+      <column caption='Power2' datatype='real' name='[UNIT-2]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='Inverter dataset.csv' datatype='table' name='[__tableau_internal_object_id__].[Inverter dataset.csv_CA1F1D52075A4B38BCDCC407252FB668]' role='measure' type='quantitative' />
+      <extract _.fcp.ObjectModelExtractV2.true...object-id='' _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='Data/TableauTemp/#TableauTemp_11vlkc113wpi5e1bxb7qj09e1u4t.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='10/17/2024 03:21:11 PM' username='tableau_internal_user'>
+          <_.fcp.ObjectModelEncapsulateLegacy.false...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <_.fcp.ObjectModelEncapsulateLegacy.true...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>F1</remote-name>
+              <remote-type>135</remote-type>
+              <local-name>[F1]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>F1</remote-alias>
+              <ordinal>0</ordinal>
+              <family>Inverter dataset.csv</family>
+              <local-type>datetime</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>131041</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>UNIT-1</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[UNIT-1]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>UNIT-1</remote-alias>
+              <ordinal>1</ordinal>
+              <family>Inverter dataset.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>33866</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>F3</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[F3]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>F3</remote-alias>
+              <ordinal>2</ordinal>
+              <family>Inverter dataset.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>42394</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>UNIT-2</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[UNIT-2]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>UNIT-2</remote-alias>
+              <ordinal>3</ordinal>
+              <family>Inverter dataset.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>34976</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>F5</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[F5]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>F5</remote-alias>
+              <ordinal>4</ordinal>
+              <family>Inverter dataset.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>39802</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='Inverter dataset.csv' id='Inverter dataset.csv_CA1F1D52075A4B38BCDCC407252FB668'>
+            <properties context=''>
+              <relation connection='textscan.1r2vb3c1frzz8l12sb05j143s8pn' name='Inverter dataset.csv' table='[Inverter dataset#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='datetime' date-parse-format='dd-MM-yyyy HH:mm|#|#|yyyy-MM-dd HH-mmZ' name='F1' ordinal='0' />
+                  <column datatype='real' name='UNIT-1' ordinal='1' />
+                  <column datatype='real' name='F3' ordinal='2' />
+                  <column datatype='real' name='UNIT-2' ordinal='3' />
+                  <column datatype='real' name='F5' ordinal='4' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+    <datasource caption='WMS Report(1)' inline='true' name='federated.1ohov151os7dzo1843zbi1nrkcpc' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='WMS Report(1)' name='textscan.14oskht0nwu2i012x4hef0kyif9e'>
+            <connection class='textscan' directory='C:/Users/Administrator/Downloads/project/Dataset_221' filename='WMS Report(1).csv' password='' server='' />
+          </named-connection>
+          <named-connection caption='Inverter dataset' name='textscan.02e5gum0rqnca3140ympo1mdkb0i'>
+            <connection class='textscan' directory='C:/Users/Administrator/Downloads/project/Dataset_221' filename='Inverter dataset.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.14oskht0nwu2i012x4hef0kyif9e' name='Inverter dataset.csv' table='[Inverter dataset#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='datetime' date-parse-format='dd-MM-yyyy HH:mm|#|#|yyyy-MM-dd HH-mmZ' name='F1' ordinal='0' />
+            <column datatype='real' name='UNIT-1' ordinal='1' />
+            <column datatype='real' name='F3' ordinal='2' />
+            <column datatype='real' name='UNIT-2' ordinal='3' />
+            <column datatype='real' name='F5' ordinal='4' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation type='collection'>
+          <relation connection='textscan.14oskht0nwu2i012x4hef0kyif9e' name='Inverter dataset.csv' table='[Inverter dataset#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+              <column datatype='datetime' date-parse-format='dd-MM-yyyy HH:mm|#|#|yyyy-MM-dd HH-mmZ' name='F1' ordinal='0' />
+              <column datatype='real' name='UNIT-1' ordinal='1' />
+              <column datatype='real' name='F3' ordinal='2' />
+              <column datatype='real' name='UNIT-2' ordinal='3' />
+              <column datatype='real' name='F5' ordinal='4' />
+            </columns>
+          </relation>
+          <relation connection='textscan.14oskht0nwu2i012x4hef0kyif9e' name='WMS Report(1).csv' table='[WMS Report(1)#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+              <column datatype='datetime' name='DATE &amp; TIME' ordinal='0' />
+              <column datatype='integer' name='GII ' ordinal='1' />
+              <column datatype='real' name='MODULE TEMP.1' ordinal='2' />
+              <column datatype='integer' name='RAIN' ordinal='3' />
+              <column datatype='real' name='AMBIENT TEMPRETURE' ordinal='4' />
+            </columns>
+          </relation>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Inverter dataset.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[WMS Report(1).csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F1</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[F1]</local-name>
+            <parent-name>[Inverter dataset.csv]</parent-name>
+            <remote-alias>F1</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Inverter dataset.csv_EC4FFB8A4CF04FC5BF4CE0AC50929A67]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>UNIT-1</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[UNIT-1]</local-name>
+            <parent-name>[Inverter dataset.csv]</parent-name>
+            <remote-alias>UNIT-1</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Inverter dataset.csv_EC4FFB8A4CF04FC5BF4CE0AC50929A67]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F3</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[F3]</local-name>
+            <parent-name>[Inverter dataset.csv]</parent-name>
+            <remote-alias>F3</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Inverter dataset.csv_EC4FFB8A4CF04FC5BF4CE0AC50929A67]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>UNIT-2</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[UNIT-2]</local-name>
+            <parent-name>[Inverter dataset.csv]</parent-name>
+            <remote-alias>UNIT-2</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Inverter dataset.csv_EC4FFB8A4CF04FC5BF4CE0AC50929A67]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F5</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[F5]</local-name>
+            <parent-name>[Inverter dataset.csv]</parent-name>
+            <remote-alias>F5</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Inverter dataset.csv_EC4FFB8A4CF04FC5BF4CE0AC50929A67]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>DATE &amp; TIME</remote-name>
+            <remote-type>135</remote-type>
+            <local-name>[DATE &amp; TIME]</local-name>
+            <parent-name>[WMS Report(1).csv]</parent-name>
+            <remote-alias>DATE &amp; TIME</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[WMS Report(1).csv_7F55307FF445466E98C4617D187ECE22]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>GII </remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[GII ]</local-name>
+            <parent-name>[WMS Report(1).csv]</parent-name>
+            <remote-alias>GII </remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[WMS Report(1).csv_7F55307FF445466E98C4617D187ECE22]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>MODULE TEMP.1</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[MODULE TEMP.1]</local-name>
+            <parent-name>[WMS Report(1).csv]</parent-name>
+            <remote-alias>MODULE TEMP.1</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[WMS Report(1).csv_7F55307FF445466E98C4617D187ECE22]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>RAIN</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[RAIN]</local-name>
+            <parent-name>[WMS Report(1).csv]</parent-name>
+            <remote-alias>RAIN</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[WMS Report(1).csv_7F55307FF445466E98C4617D187ECE22]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>AMBIENT TEMPRETURE</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[AMBIENT TEMPRETURE]</local-name>
+            <parent-name>[WMS Report(1).csv]</parent-name>
+            <remote-alias>AMBIENT TEMPRETURE</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[WMS Report(1).csv_7F55307FF445466E98C4617D187ECE22]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Ambient Tempreture' datatype='real' name='[AMBIENT TEMPRETURE]' role='measure' type='quantitative' />
+      <column caption='Unit_1' datatype='real' name='[Calculation_791507640536002561]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='SUM([UNIT-1]) + SUM([F3])' />
+      </column>
+      <column caption='Unit_2' datatype='real' name='[Calculation_791507640536403970]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='SUM([UNIT-2]) + SUM([F5])' />
+      </column>
+      <column caption='Date &amp; Time' datatype='datetime' name='[DATE &amp; TIME]' role='dimension' type='ordinal' />
+      <column caption='Date&amp;Time' datatype='datetime' name='[F1]' role='dimension' type='ordinal' />
+      <column caption='Power1' datatype='real' name='[F3]' role='measure' type='quantitative' />
+      <column caption='Power3' datatype='real' name='[F5]' role='measure' type='quantitative' />
+      <column caption='Gii' datatype='integer' name='[GII ]' role='measure' type='quantitative' />
+      <column caption='Module Temp.1' datatype='real' name='[MODULE TEMP.1]' role='measure' type='quantitative' />
+      <column caption='Rain' datatype='integer' name='[RAIN]' role='measure' type='quantitative' />
+      <column caption='Power' datatype='real' name='[UNIT-1]' role='measure' type='quantitative' />
+      <column caption='Power2' datatype='real' name='[UNIT-2]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='Inverter dataset.csv' datatype='table' name='[__tableau_internal_object_id__].[Inverter dataset.csv_EC4FFB8A4CF04FC5BF4CE0AC50929A67]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='WMS Report(1).csv' datatype='table' name='[__tableau_internal_object_id__].[WMS Report(1).csv_7F55307FF445466E98C4617D187ECE22]' role='measure' type='quantitative' />
+      <column-instance column='[__tableau_internal_object_id__].[Inverter dataset.csv_EC4FFB8A4CF04FC5BF4CE0AC50929A67]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:Inverter dataset.csv_EC4FFB8A4CF04FC5BF4CE0AC50929A67:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[__tableau_internal_object_id__].[WMS Report(1).csv_7F55307FF445466E98C4617D187ECE22]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:WMS Report(1).csv_7F55307FF445466E98C4617D187ECE22:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[F3]' derivation='Avg' name='[avg:F3:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[F5]' derivation='Avg' name='[avg:F5:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[UNIT-1]' derivation='Avg' name='[avg:UNIT-1:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[UNIT-2]' derivation='Avg' name='[avg:UNIT-2:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[DATE &amp; TIME]' derivation='Day' name='[dy:DATE &amp; TIME:ok]' pivot='key' type='ordinal' />
+      <column-instance column='[AMBIENT TEMPRETURE]' derivation='Max' name='[max:AMBIENT TEMPRETURE:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[MODULE TEMP.1]' derivation='Max' name='[max:MODULE TEMP.1:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[DATE &amp; TIME]' derivation='Month' name='[mn:DATE &amp; TIME:ok]' pivot='key' type='ordinal' />
+      <column-instance column='[DATE &amp; TIME]' derivation='Quarter' name='[qr:DATE &amp; TIME:ok]' pivot='key' type='ordinal' />
+      <column-instance column='[AMBIENT TEMPRETURE]' derivation='Sum' name='[sum:AMBIENT TEMPRETURE:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[F3]' derivation='Sum' name='[sum:F3:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[F5]' derivation='Sum' name='[sum:F5:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[GII ]' derivation='Sum' name='[sum:GII :qk]' pivot='key' type='quantitative' />
+      <column-instance column='[MODULE TEMP.1]' derivation='Sum' name='[sum:MODULE TEMP.1:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[RAIN]' derivation='Sum' name='[sum:RAIN:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[UNIT-1]' derivation='Sum' name='[sum:UNIT-1:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[UNIT-2]' derivation='Sum' name='[sum:UNIT-2:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Calculation_791507640536002561]' derivation='User' name='[usr:Calculation_791507640536002561:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Calculation_791507640536403970]' derivation='User' name='[usr:Calculation_791507640536403970:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[DATE &amp; TIME]' derivation='Year' name='[yr:DATE &amp; TIME:ok]' pivot='key' type='ordinal' />
+      <extract _.fcp.ObjectModelExtractV2.true...object-id='' _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='Data/TableauTemp/#TableauTemp_1cayvbt1qn4dog1c6x9vq0sb610a.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='10/17/2024 03:45:54 PM' username='tableau_internal_user'>
+          <_.fcp.ObjectModelEncapsulateLegacy.false...relation name='Inverter dataset.csv_EC4FFB8A4CF04FC5BF4CE0AC50929A67' table='[Extract].[Inverter dataset.csv_EC4FFB8A4CF04FC5BF4CE0AC50929A67]' type='table' />
+          <_.fcp.ObjectModelEncapsulateLegacy.true...relation type='collection'>
+            <relation name='Inverter dataset.csv_EC4FFB8A4CF04FC5BF4CE0AC50929A67' table='[Extract].[Inverter dataset.csv_EC4FFB8A4CF04FC5BF4CE0AC50929A67]' type='table' />
+            <relation name='WMS Report(1).csv_7F55307FF445466E98C4617D187ECE22' table='[Extract].[WMS Report(1).csv_7F55307FF445466E98C4617D187ECE22]' type='table' />
+          </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>F1</remote-name>
+              <remote-type>135</remote-type>
+              <local-name>[F1]</local-name>
+              <parent-name>[Inverter dataset.csv_EC4FFB8A4CF04FC5BF4CE0AC50929A67]</parent-name>
+              <remote-alias>F1</remote-alias>
+              <ordinal>0</ordinal>
+              <family>Inverter dataset.csv</family>
+              <local-type>datetime</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>131041</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Inverter dataset.csv_EC4FFB8A4CF04FC5BF4CE0AC50929A67]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>UNIT-1</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[UNIT-1]</local-name>
+              <parent-name>[Inverter dataset.csv_EC4FFB8A4CF04FC5BF4CE0AC50929A67]</parent-name>
+              <remote-alias>UNIT-1</remote-alias>
+              <ordinal>1</ordinal>
+              <family>Inverter dataset.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>30287</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Inverter dataset.csv_EC4FFB8A4CF04FC5BF4CE0AC50929A67]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>F3</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[F3]</local-name>
+              <parent-name>[Inverter dataset.csv_EC4FFB8A4CF04FC5BF4CE0AC50929A67]</parent-name>
+              <remote-alias>F3</remote-alias>
+              <ordinal>2</ordinal>
+              <family>Inverter dataset.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>42537</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Inverter dataset.csv_EC4FFB8A4CF04FC5BF4CE0AC50929A67]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>UNIT-2</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[UNIT-2]</local-name>
+              <parent-name>[Inverter dataset.csv_EC4FFB8A4CF04FC5BF4CE0AC50929A67]</parent-name>
+              <remote-alias>UNIT-2</remote-alias>
+              <ordinal>3</ordinal>
+              <family>Inverter dataset.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>34819</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Inverter dataset.csv_EC4FFB8A4CF04FC5BF4CE0AC50929A67]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>F5</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[F5]</local-name>
+              <parent-name>[Inverter dataset.csv_EC4FFB8A4CF04FC5BF4CE0AC50929A67]</parent-name>
+              <remote-alias>F5</remote-alias>
+              <ordinal>4</ordinal>
+              <family>Inverter dataset.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>42221</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Inverter dataset.csv_EC4FFB8A4CF04FC5BF4CE0AC50929A67]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>DATE &amp; TIME</remote-name>
+              <remote-type>135</remote-type>
+              <local-name>[DATE &amp; TIME]</local-name>
+              <parent-name>[WMS Report(1).csv_7F55307FF445466E98C4617D187ECE22]</parent-name>
+              <remote-alias>DATE &amp; TIME</remote-alias>
+              <ordinal>5</ordinal>
+              <family>WMS Report(1).csv</family>
+              <local-type>datetime</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>68451</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[WMS Report(1).csv_7F55307FF445466E98C4617D187ECE22]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>GII </remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[GII ]</local-name>
+              <parent-name>[WMS Report(1).csv_7F55307FF445466E98C4617D187ECE22]</parent-name>
+              <remote-alias>GII </remote-alias>
+              <ordinal>6</ordinal>
+              <family>WMS Report(1).csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>3107</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[WMS Report(1).csv_7F55307FF445466E98C4617D187ECE22]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>MODULE TEMP.1</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[MODULE TEMP.1]</local-name>
+              <parent-name>[WMS Report(1).csv_7F55307FF445466E98C4617D187ECE22]</parent-name>
+              <remote-alias>MODULE TEMP.1</remote-alias>
+              <ordinal>7</ordinal>
+              <family>WMS Report(1).csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1094</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[WMS Report(1).csv_7F55307FF445466E98C4617D187ECE22]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>RAIN</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[RAIN]</local-name>
+              <parent-name>[WMS Report(1).csv_7F55307FF445466E98C4617D187ECE22]</parent-name>
+              <remote-alias>RAIN</remote-alias>
+              <ordinal>8</ordinal>
+              <family>WMS Report(1).csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[WMS Report(1).csv_7F55307FF445466E98C4617D187ECE22]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>AMBIENT TEMPRETURE</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[AMBIENT TEMPRETURE]</local-name>
+              <parent-name>[WMS Report(1).csv_7F55307FF445466E98C4617D187ECE22]</parent-name>
+              <remote-alias>AMBIENT TEMPRETURE</remote-alias>
+              <ordinal>9</ordinal>
+              <family>WMS Report(1).csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>563</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[WMS Report(1).csv_7F55307FF445466E98C4617D187ECE22]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' rowDisplayCount='100' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[yr:DATE &amp; TIME:ok]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>2024</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>%null%</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[qr:DATE &amp; TIME:ok]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>2024</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>%null%</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[dy:DATE &amp; TIME:ok]' type='palette'>
+            <map to='#499894'>
+              <bucket>9</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>29</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>4</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>21</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>3</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>25</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>%null%</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>12</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>10</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>30</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>26</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>18</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>1</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>22</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>16</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>7</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>27</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>13</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>14</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>17</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>19</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>20</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>6</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>31</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>8</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>28</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>5</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>23</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>15</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>11</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>2</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>24</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[:Measure Names]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.1ohov151os7dzo1843zbi1nrkcpc].[sum:UNIT-1:qk]&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;[federated.1ohov151os7dzo1843zbi1nrkcpc].[__tableau_internal_object_id__].[cnt:WMS Report(1).csv_7F55307FF445466E98C4617D187ECE22:qk]&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;[federated.1ohov151os7dzo1843zbi1nrkcpc].[avg:UNIT-1:qk]&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;[federated.1ohov151os7dzo1843zbi1nrkcpc].[sum:F5:qk]&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;[federated.1ohov151os7dzo1843zbi1nrkcpc].[usr:Calculation_791507640536403970:qk]&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;[federated.1ohov151os7dzo1843zbi1nrkcpc].[sum:RAIN:qk]&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;[federated.1ohov151os7dzo1843zbi1nrkcpc].[sum:GII :qk]&quot;</bucket>
+            </map>
+            <map to='#9c755f'>
+              <bucket>&quot;[federated.1ohov151os7dzo1843zbi1nrkcpc].[avg:F5:qk]&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;[federated.1ohov151os7dzo1843zbi1nrkcpc].[max:AMBIENT TEMPRETURE:qk]&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;[federated.1ohov151os7dzo1843zbi1nrkcpc].[sum:AMBIENT TEMPRETURE:qk]&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;[federated.1ohov151os7dzo1843zbi1nrkcpc].[avg:F3:qk]&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;[federated.1ohov151os7dzo1843zbi1nrkcpc].[max:MODULE TEMP.1:qk]&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;[federated.1ohov151os7dzo1843zbi1nrkcpc].[sum:MODULE TEMP.1:qk]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.1ohov151os7dzo1843zbi1nrkcpc].[avg:UNIT-2:qk]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.1ohov151os7dzo1843zbi1nrkcpc].[sum:UNIT-2:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.1ohov151os7dzo1843zbi1nrkcpc].[sum:F3:qk]&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;[federated.1ohov151os7dzo1843zbi1nrkcpc].[usr:Calculation_791507640536002561:qk]&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;[federated.1ohov151os7dzo1843zbi1nrkcpc].[__tableau_internal_object_id__].[cnt:Inverter dataset.csv_EC4FFB8A4CF04FC5BF4CE0AC50929A67:qk]&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[mn:DATE &amp; TIME:ok]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>4</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>%null%</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>6</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>5</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='Inverter dataset.csv' id='Inverter dataset.csv_EC4FFB8A4CF04FC5BF4CE0AC50929A67'>
+            <properties context=''>
+              <relation connection='textscan.14oskht0nwu2i012x4hef0kyif9e' name='Inverter dataset.csv' table='[Inverter dataset#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='datetime' date-parse-format='dd-MM-yyyy HH:mm|#|#|yyyy-MM-dd HH-mmZ' name='F1' ordinal='0' />
+                  <column datatype='real' name='UNIT-1' ordinal='1' />
+                  <column datatype='real' name='F3' ordinal='2' />
+                  <column datatype='real' name='UNIT-2' ordinal='3' />
+                  <column datatype='real' name='F5' ordinal='4' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Inverter dataset.csv_EC4FFB8A4CF04FC5BF4CE0AC50929A67' table='[Extract].[Inverter dataset.csv_EC4FFB8A4CF04FC5BF4CE0AC50929A67]' type='table' />
+            </properties>
+          </object>
+          <object caption='WMS Report(1).csv' id='WMS Report(1).csv_7F55307FF445466E98C4617D187ECE22'>
+            <properties context=''>
+              <relation connection='textscan.14oskht0nwu2i012x4hef0kyif9e' name='WMS Report(1).csv' table='[WMS Report(1)#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='datetime' name='DATE &amp; TIME' ordinal='0' />
+                  <column datatype='integer' name='GII ' ordinal='1' />
+                  <column datatype='real' name='MODULE TEMP.1' ordinal='2' />
+                  <column datatype='integer' name='RAIN' ordinal='3' />
+                  <column datatype='real' name='AMBIENT TEMPRETURE' ordinal='4' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='WMS Report(1).csv_7F55307FF445466E98C4617D187ECE22' table='[Extract].[WMS Report(1).csv_7F55307FF445466E98C4617D187ECE22]' type='table' />
+            </properties>
+          </object>
+        </objects>
+        <relationships>
+          <relationship>
+            <expression op='='>
+              <expression op='[F1]' />
+              <expression op='[DATE &amp; TIME]' />
+            </expression>
+            <first-end-point object-id='Inverter dataset.csv_EC4FFB8A4CF04FC5BF4CE0AC50929A67' />
+            <second-end-point object-id='WMS Report(1).csv_7F55307FF445466E98C4617D187ECE22' />
+          </relationship>
+        </relationships>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <shared-views>
+    <shared-view name='federated.1ohov151os7dzo1843zbi1nrkcpc'>
+      <datasources>
+        <datasource caption='WMS Report(1)' name='federated.1ohov151os7dzo1843zbi1nrkcpc' />
+      </datasources>
+      <datasource-dependencies datasource='federated.1ohov151os7dzo1843zbi1nrkcpc'>
+        <column caption='Date &amp; Time' datatype='datetime' name='[DATE &amp; TIME]' role='dimension' type='ordinal' />
+        <column-instance column='[DATE &amp; TIME]' derivation='Month' name='[mn:DATE &amp; TIME:ok]' pivot='key' type='ordinal' />
+      </datasource-dependencies>
+      <filter class='categorical' column='[federated.1ohov151os7dzo1843zbi1nrkcpc].[mn:DATE &amp; TIME:ok]'>
+        <groupfilter function='level-members' level='[mn:DATE &amp; TIME:ok]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+        <target field='[federated.1ohov151os7dzo1843zbi1nrkcpc].[mn:DATE &amp; TIME:ok]' />
+      </filter>
+    </shared-view>
+  </shared-views>
+  <worksheets>
+    <worksheet name='Average of Power by each Months'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontsize='10'>Average of Power by each Months</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='WMS Report(1)' name='federated.1ohov151os7dzo1843zbi1nrkcpc' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1ohov151os7dzo1843zbi1nrkcpc'>
+            <column caption='Date &amp; Time' datatype='datetime' name='[DATE &amp; TIME]' role='dimension' type='ordinal' />
+            <column caption='Power1' datatype='real' name='[F3]' role='measure' type='quantitative' />
+            <column caption='Power3' datatype='real' name='[F5]' role='measure' type='quantitative' />
+            <column caption='Power' datatype='real' name='[UNIT-1]' role='measure' type='quantitative' />
+            <column caption='Power2' datatype='real' name='[UNIT-2]' role='measure' type='quantitative' />
+            <column-instance column='[F3]' derivation='Avg' name='[avg:F3:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[F5]' derivation='Avg' name='[avg:F5:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[UNIT-1]' derivation='Avg' name='[avg:UNIT-1:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[UNIT-2]' derivation='Avg' name='[avg:UNIT-2:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[DATE &amp; TIME]' derivation='Month' name='[mn:DATE &amp; TIME:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1ohov151os7dzo1843zbi1nrkcpc].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1ohov151os7dzo1843zbi1nrkcpc].[avg:UNIT-1:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1ohov151os7dzo1843zbi1nrkcpc].[avg:F3:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1ohov151os7dzo1843zbi1nrkcpc].[avg:UNIT-2:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1ohov151os7dzo1843zbi1nrkcpc].[avg:F5:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.1ohov151os7dzo1843zbi1nrkcpc].[:Measure Names]</column>
+            <column>[federated.1ohov151os7dzo1843zbi1nrkcpc].[mn:DATE &amp; TIME:ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='width' field='[federated.1ohov151os7dzo1843zbi1nrkcpc].[Multiple Values]' value='52' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.1ohov151os7dzo1843zbi1nrkcpc].[:Measure Names]' value='16' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='height' field='[federated.1ohov151os7dzo1843zbi1nrkcpc].[mn:DATE &amp; TIME:ok]' value='23' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.1ohov151os7dzo1843zbi1nrkcpc].[:Measure Names]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='1.1864088773727417' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1ohov151os7dzo1843zbi1nrkcpc].[Multiple Values]</rows>
+        <cols>([federated.1ohov151os7dzo1843zbi1nrkcpc].[mn:DATE &amp; TIME:ok] / [federated.1ohov151os7dzo1843zbi1nrkcpc].[:Measure Names])</cols>
+      </table>
+      <simple-id uuid='{28E6FEF5-8F48-48A5-8494-6D428228B83D}' />
+    </worksheet>
+    <worksheet name='Average of Unit_1 by Months'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontsize='10'>Average of Unit_1 by Months</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='WMS Report(1)' name='federated.1ohov151os7dzo1843zbi1nrkcpc' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1ohov151os7dzo1843zbi1nrkcpc'>
+            <column caption='Unit_1' datatype='real' name='[Calculation_791507640536002561]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='SUM([UNIT-1]) + SUM([F3])' />
+            </column>
+            <column caption='Date &amp; Time' datatype='datetime' name='[DATE &amp; TIME]' role='dimension' type='ordinal' />
+            <column caption='Power1' datatype='real' name='[F3]' role='measure' type='quantitative' />
+            <column caption='Power' datatype='real' name='[UNIT-1]' role='measure' type='quantitative' />
+            <column-instance column='[DATE &amp; TIME]' derivation='Month' name='[mn:DATE &amp; TIME:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Calculation_791507640536002561]' derivation='User' name='[usr:Calculation_791507640536002561:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.1ohov151os7dzo1843zbi1nrkcpc].[mn:DATE &amp; TIME:ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='height' field='[federated.1ohov151os7dzo1843zbi1nrkcpc].[usr:Calculation_791507640536002561:qk]' value='57' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='width' field='[federated.1ohov151os7dzo1843zbi1nrkcpc].[mn:DATE &amp; TIME:ok]' value='40' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#f17b79' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1ohov151os7dzo1843zbi1nrkcpc].[mn:DATE &amp; TIME:ok]</rows>
+        <cols>[federated.1ohov151os7dzo1843zbi1nrkcpc].[usr:Calculation_791507640536002561:qk]</cols>
+      </table>
+      <simple-id uuid='{2AB688AF-F7D5-4133-9CCF-400ECC0370C4}' />
+    </worksheet>
+    <worksheet name='Average of Unit_2 by Months'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontsize='10'>Average of Unit_2 by Months</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='WMS Report(1)' name='federated.1ohov151os7dzo1843zbi1nrkcpc' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1ohov151os7dzo1843zbi1nrkcpc'>
+            <column caption='Unit_2' datatype='real' name='[Calculation_791507640536403970]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='SUM([UNIT-2]) + SUM([F5])' />
+            </column>
+            <column caption='Date &amp; Time' datatype='datetime' name='[DATE &amp; TIME]' role='dimension' type='ordinal' />
+            <column caption='Power3' datatype='real' name='[F5]' role='measure' type='quantitative' />
+            <column caption='Power2' datatype='real' name='[UNIT-2]' role='measure' type='quantitative' />
+            <column-instance column='[DATE &amp; TIME]' derivation='Month' name='[mn:DATE &amp; TIME:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Calculation_791507640536403970]' derivation='User' name='[usr:Calculation_791507640536403970:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.1ohov151os7dzo1843zbi1nrkcpc].[mn:DATE &amp; TIME:ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='width' field='[federated.1ohov151os7dzo1843zbi1nrkcpc].[usr:Calculation_791507640536403970:qk]' value='84' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='width' value='71' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.1ohov151os7dzo1843zbi1nrkcpc].[mn:DATE &amp; TIME:ok]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1ohov151os7dzo1843zbi1nrkcpc].[usr:Calculation_791507640536403970:qk]</rows>
+        <cols />
+      </table>
+      <simple-id uuid='{D98F8D0C-C250-4E26-A66D-73E5EE44FAAD}' />
+    </worksheet>
+    <worksheet name='Max &amp; Min of Gii, Ambient &amp; Module temp'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontsize='10'>Max &amp; Min of Gii, Ambient &amp; Module temp</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='WMS Report(1)' name='federated.1ohov151os7dzo1843zbi1nrkcpc' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1ohov151os7dzo1843zbi1nrkcpc'>
+            <column caption='Ambient Tempreture' datatype='real' name='[AMBIENT TEMPRETURE]' role='measure' type='quantitative' />
+            <column caption='Date &amp; Time' datatype='datetime' name='[DATE &amp; TIME]' role='dimension' type='ordinal' />
+            <column caption='Gii' datatype='integer' name='[GII ]' role='measure' type='quantitative' />
+            <column caption='Module Temp.1' datatype='real' name='[MODULE TEMP.1]' role='measure' type='quantitative' />
+            <column-instance column='[AMBIENT TEMPRETURE]' derivation='Max' name='[max:AMBIENT TEMPRETURE:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[GII ]' derivation='Max' name='[max:GII :qk]' pivot='key' type='quantitative' />
+            <column-instance column='[MODULE TEMP.1]' derivation='Max' name='[max:MODULE TEMP.1:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[AMBIENT TEMPRETURE]' derivation='Min' name='[min:AMBIENT TEMPRETURE:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[GII ]' derivation='Min' name='[min:GII :qk]' pivot='key' type='quantitative' />
+            <column-instance column='[MODULE TEMP.1]' derivation='Min' name='[min:MODULE TEMP.1:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[DATE &amp; TIME]' derivation='Month' name='[mn:DATE &amp; TIME:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1ohov151os7dzo1843zbi1nrkcpc].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1ohov151os7dzo1843zbi1nrkcpc].[max:AMBIENT TEMPRETURE:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1ohov151os7dzo1843zbi1nrkcpc].[min:AMBIENT TEMPRETURE:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1ohov151os7dzo1843zbi1nrkcpc].[max:MODULE TEMP.1:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1ohov151os7dzo1843zbi1nrkcpc].[min:MODULE TEMP.1:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1ohov151os7dzo1843zbi1nrkcpc].[max:GII :qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1ohov151os7dzo1843zbi1nrkcpc].[min:GII :qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <manual-sort column='[federated.1ohov151os7dzo1843zbi1nrkcpc].[:Measure Names]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;[federated.1ohov151os7dzo1843zbi1nrkcpc].[max:AMBIENT TEMPRETURE:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1ohov151os7dzo1843zbi1nrkcpc].[min:AMBIENT TEMPRETURE:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1ohov151os7dzo1843zbi1nrkcpc].[max:MODULE TEMP.1:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1ohov151os7dzo1843zbi1nrkcpc].[min:MODULE TEMP.1:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1ohov151os7dzo1843zbi1nrkcpc].[max:GII :qk]&quot;</bucket>
+              <bucket>&quot;[federated.1ohov151os7dzo1843zbi1nrkcpc].[min:GII :qk]&quot;</bucket>
+            </dictionary>
+          </manual-sort>
+          <slices>
+            <column>[federated.1ohov151os7dzo1843zbi1nrkcpc].[:Measure Names]</column>
+            <column>[federated.1ohov151os7dzo1843zbi1nrkcpc].[mn:DATE &amp; TIME:ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='refline'>
+            <format attr='stroke-color' id='refline0' value='#000000' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.1ohov151os7dzo1843zbi1nrkcpc].[Multiple Values]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1ohov151os7dzo1843zbi1nrkcpc].[:Measure Names]</rows>
+        <cols />
+      </table>
+      <simple-id uuid='{D0B84EC2-7BD5-4964-B93F-93AA2E44811C}' />
+    </worksheet>
+    <worksheet name='Sliders'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='WMS Report(1)' name='federated.1ohov151os7dzo1843zbi1nrkcpc' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1ohov151os7dzo1843zbi1nrkcpc'>
+            <column caption='Date &amp; Time' datatype='datetime' name='[DATE &amp; TIME]' role='dimension' type='ordinal' />
+            <column-instance column='[DATE &amp; TIME]' derivation='Month' name='[mn:DATE &amp; TIME:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.1ohov151os7dzo1843zbi1nrkcpc].[mn:DATE &amp; TIME:ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+        <page-trail-options enabled='true' />
+      </table>
+      <simple-id uuid='{1A9D177B-389D-4F2F-A4D7-9FF2486C0075}' />
+    </worksheet>
+    <worksheet name='Sum of Rain by Months'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontsize='10'>Number of Rain by Each Months</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='WMS Report(1)' name='federated.1ohov151os7dzo1843zbi1nrkcpc' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1ohov151os7dzo1843zbi1nrkcpc'>
+            <column caption='Date &amp; Time' datatype='datetime' name='[DATE &amp; TIME]' role='dimension' type='ordinal' />
+            <column caption='Rain' datatype='integer' name='[RAIN]' role='measure' type='quantitative' />
+            <column-instance column='[DATE &amp; TIME]' derivation='Month' name='[mn:DATE &amp; TIME:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[RAIN]' derivation='Sum' name='[sum:RAIN:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.1ohov151os7dzo1843zbi1nrkcpc].[mn:DATE &amp; TIME:ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <encodings>
+              <size column='[federated.1ohov151os7dzo1843zbi1nrkcpc].[sum:RAIN:qk]' />
+              <text column='[federated.1ohov151os7dzo1843zbi1nrkcpc].[mn:DATE &amp; TIME:ok]' />
+              <color column='[federated.1ohov151os7dzo1843zbi1nrkcpc].[mn:DATE &amp; TIME:ok]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{A8B9CEE5-BCD6-4DA5-8A31-1492C9A305B4}' />
+    </worksheet>
+    <worksheet name='Total of Gii, Ambient &amp; Module Temp by Months'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontsize='10'>Total of Gii, Ambient &amp; Module Temp by Months</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='WMS Report(1)' name='federated.1ohov151os7dzo1843zbi1nrkcpc' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1ohov151os7dzo1843zbi1nrkcpc'>
+            <column caption='Ambient Tempreture' datatype='real' name='[AMBIENT TEMPRETURE]' role='measure' type='quantitative' />
+            <column caption='Date &amp; Time' datatype='datetime' name='[DATE &amp; TIME]' role='dimension' type='ordinal' />
+            <column caption='Gii' datatype='integer' name='[GII ]' role='measure' type='quantitative' />
+            <column caption='Module Temp.1' datatype='real' name='[MODULE TEMP.1]' role='measure' type='quantitative' />
+            <column-instance column='[DATE &amp; TIME]' derivation='Month' name='[mn:DATE &amp; TIME:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[DATE &amp; TIME]' derivation='Month' name='[mn:DATE &amp; TIME:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[AMBIENT TEMPRETURE]' derivation='Sum' name='[sum:AMBIENT TEMPRETURE:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[GII ]' derivation='Sum' name='[sum:GII :qk]' pivot='key' type='quantitative' />
+            <column-instance column='[MODULE TEMP.1]' derivation='Sum' name='[sum:MODULE TEMP.1:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.1ohov151os7dzo1843zbi1nrkcpc].[mn:DATE &amp; TIME:ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='height' field='[federated.1ohov151os7dzo1843zbi1nrkcpc].[mn:DATE &amp; TIME:qk]' value='34' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Area' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#c290b4' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.1ohov151os7dzo1843zbi1nrkcpc].[sum:AMBIENT TEMPRETURE:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Area' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#c290b4' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.1ohov151os7dzo1843zbi1nrkcpc].[sum:GII :qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Area' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#c290b4' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='3' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.1ohov151os7dzo1843zbi1nrkcpc].[sum:MODULE TEMP.1:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Area' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#c290b4' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.1ohov151os7dzo1843zbi1nrkcpc].[sum:GII :qk] + ([federated.1ohov151os7dzo1843zbi1nrkcpc].[sum:AMBIENT TEMPRETURE:qk] + [federated.1ohov151os7dzo1843zbi1nrkcpc].[sum:MODULE TEMP.1:qk]))</rows>
+        <cols>[federated.1ohov151os7dzo1843zbi1nrkcpc].[mn:DATE &amp; TIME:qk]</cols>
+      </table>
+      <simple-id uuid='{385B4C39-CEEB-4A66-B632-ABD542719CA2}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard _.fcp.AccessibleZoneTabOrder.true...enable-sort-zone-taborder='true' name='Solar Report'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#000000' fontsize='24'>SOLAR REPORT</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <style />
+      <size maxheight='860' maxwidth='1150' minheight='560' minwidth='420' sizing-mode='range' />
+      <datasources>
+        <datasource caption='WMS Report(1)' name='federated.1ohov151os7dzo1843zbi1nrkcpc' />
+      </datasources>
+      <datasource-dependencies datasource='federated.1ohov151os7dzo1843zbi1nrkcpc'>
+        <column caption='Date &amp; Time' datatype='datetime' name='[DATE &amp; TIME]' role='dimension' type='ordinal' />
+        <column-instance column='[DATE &amp; TIME]' derivation='Month' name='[mn:DATE &amp; TIME:ok]' pivot='key' type='ordinal' />
+      </datasource-dependencies>
+      <zones>
+        <zone h='100000' id='18' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='100000' id='44' param='vert' type-v2='layout-flow' w='100000' x='0' y='0'>
+            <zone h='9286' id='45' type-v2='title' w='100000' x='0' y='0'>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='4' />
+              </zone-style>
+            </zone>
+            <zone h='90714' id='40' param='horz' type-v2='layout-flow' w='100000' x='0' y='9286'>
+              <zone h='90714' id='24' param='vert' type-v2='layout-flow' w='100000' x='0' y='9286'>
+                <zone h='90714' id='21' param='horz' type-v2='layout-flow' w='100000' x='0' y='9286' />
+              </zone>
+            </zone>
+          </zone>
+        </zone>
+        <zone h='35179' id='3' name='Average of Unit_1 by Months' w='38191' x='966' y='8571' />
+        <zone h='52679' id='5' name='Average of Power by each Months' w='42230' x='13960' y='46071' />
+        <zone h='37143' id='12' name='Total of Gii, Ambient &amp; Module Temp by Months' w='44513' x='39245' y='9286' />
+        <zone h='52321' id='13' name='Average of Unit_2 by Months' w='13082' x='88' y='44464' />
+        <zone h='35536' id='16' name='Max &amp; Min of Gii, Ambient &amp; Module temp' w='20808' x='56716' y='53393' />
+        <zone h='33750' id='22' name='Average of Power by each Months' param='[federated.1ohov151os7dzo1843zbi1nrkcpc].[mn:DATE &amp; TIME:ok]' type-v2='filter' w='15891' x='84109' y='10893' />
+        <zone h='46786' id='38' name='Sum of Rain by Months' w='21773' x='77875' y='47321'>
+          <layout-cache type-h='fixed' type-w='fixed' />
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <layout-options>
+            <title>
+              <formatted-text>
+                <run bold='true' fontalignment='1'>Solar Report</run>
+              </formatted-text>
+            </title>
+          </layout-options>
+          <size maxheight='1900' minheight='1900' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='42' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='100000' id='41' param='vert' type-v2='layout-flow' w='100000' x='0' y='0'>
+                <zone fixed-size='280' h='35179' id='3' is-fixed='true' name='Average of Unit_1 by Months' w='38191' x='1580' y='5893'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='37143' id='12' is-fixed='true' name='Total of Gii, Ambient &amp; Module Temp by Months' w='55838' x='42318' y='7143'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='52321' id='13' is-fixed='true' name='Average of Unit_2 by Months' w='13082' x='88' y='44464'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='21786' id='22' mode='checkdropdown' name='Average of Power by each Months' param='[federated.1ohov151os7dzo1843zbi1nrkcpc].[mn:DATE &amp; TIME:ok]' type-v2='filter' w='18262' x='80948' y='44107'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='52679' id='5' is-fixed='true' name='Average of Power by each Months' w='41703' x='16857' y='46071'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='49821' id='38' is-fixed='true' name='Sum of Rain by Months' w='20193' x='59350' y='48214'>
+                  <layout-cache type-h='fixed' type-w='fixed' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='34107' id='16' is-fixed='true' name='Max &amp; Min of Gii, Ambient &amp; Module temp' w='20281' x='78402' y='65714'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{6DD4C9D3-EF07-49C4-9EF3-1895872D041B}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='51'>
+    <window class='worksheet' name='Average of Unit_1 by Months'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <default-map-tool-selection tool='2' />
+      </viewpoint>
+      <simple-id uuid='{2DF205BA-E054-4C8E-9DDC-4DE3D670894F}' />
+    </window>
+    <window class='worksheet' name='Average of Power by each Months'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1ohov151os7dzo1843zbi1nrkcpc].[:Measure Names]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{67563E11-DD07-42A1-8665-113FE07FE3A1}' />
+    </window>
+    <window class='worksheet' name='Sum of Rain by Months'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1ohov151os7dzo1843zbi1nrkcpc].[mn:DATE &amp; TIME:ok]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{F9FA1543-9289-4E51-BF59-DDAD84D9F745}' />
+    </window>
+    <window class='worksheet' name='Total of Gii, Ambient &amp; Module Temp by Months'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{E531D8F6-8631-4C68-94B5-32071742AC64}' />
+    </window>
+    <window class='worksheet' name='Max &amp; Min of Gii, Ambient &amp; Module temp'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+          <strip size='160'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.1ohov151os7dzo1843zbi1nrkcpc].[:Measure Names]' type='highlighter' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{0FEBA5B4-2615-4430-B957-20369A4F2333}' />
+    </window>
+    <window class='worksheet' name='Average of Unit_2 by Months'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1ohov151os7dzo1843zbi1nrkcpc].[mn:DATE &amp; TIME:ok]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <default-map-tool-selection tool='2' />
+      </viewpoint>
+      <simple-id uuid='{CF4A4D0A-FB5B-4D15-81D3-374D8BFEF60B}' />
+    </window>
+    <window class='worksheet' name='Sliders'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.1ohov151os7dzo1843zbi1nrkcpc].[mn:DATE &amp; TIME:ok]' type='filter' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{CD448A61-7603-4EF1-A326-C9CF0C632BDE}' />
+    </window>
+    <window class='dashboard' maximized='true' name='Solar Report'>
+      <viewpoints>
+        <viewpoint name='Average of Power by each Months'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Average of Unit_1 by Months'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Average of Unit_2 by Months'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Max &amp; Min of Gii, Ambient &amp; Module temp' />
+        <viewpoint name='Sum of Rain by Months' />
+        <viewpoint name='Total of Gii, Ambient &amp; Module Temp by Months'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='16' />
+      <simple-id uuid='{39167069-7DAF-460A-B5D1-F7094640F5D3}' />
+    </window>
+  </windows>
+</workbook>
